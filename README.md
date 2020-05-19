@@ -12,8 +12,9 @@ Fetch and extract the ports tree, if you haven't already; Jitsi Videobridge, Jit
 portsnap fetch && portsnap extract
 ```
 
-#### Note
-This describes configuring a server `jitsi.example.com`. You will need to change references to that to match your host, and generate some passwords for `YOURSECRET1`, `YOURSECRET2` and `YOURSECRET3`. These placeholders are indicated in this guide and in the example configuration files with `<angled brackets>`
+#### Notes
+* This guide describes configuring a server `jitsi.example.com`. You will need to change references to that to match your host, and generate some passwords for `YOURSECRET1`, `YOURSECRET2` and `YOURSECRET3`. These placeholders are indicated in this guide and in the example configuration files with `<angled brackets>`
+* These instructions are modified from the official Devops guide, which can be found [here](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-manual)
 
 ## Configure prosody
 
