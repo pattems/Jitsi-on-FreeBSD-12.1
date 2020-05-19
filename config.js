@@ -7,10 +7,10 @@ var config = {
                 muc: 'conference.<jitsi.example.com>',             //changeme
                 bridge: 'jitsi-videobridge.<jitsi.example.com>',   //changeme
                 focus: 'focus.<jitsi.example.com>'                 //changeme
-                // anonymousdomain: 'guest.jitsi.example.com',     // When using authentication, domain for guest users.
-                // authdomain: 'auth.jitsi.example.com'            // Domain for authenticated users. Defaults to <domain>.
+                // anonymousdomain: 'guest.<jitsi.example.com>',   // When using authentication, domain for guest users.
+                // authdomain: 'auth.<jitsi.example.com>'          // Domain for authenticated users. Defaults to <domain>.
         },
-        bosh: '//<jitsi.example.com>/http-bind',                   // BOSH URL.
+        bosh: '//<jitsi.example.com>/http-bind',                   // changeme
         clientNode: 'http://jitsi.org/jitsimeet',                  // The name of client node advertised in XEP-0115 'c' stanza
         testing: { p2pTestMode: false },                           // Testing / experimental features.
 // Audio
