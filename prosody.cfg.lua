@@ -2,7 +2,7 @@
 ---------- Server-wide settings ----------
 
 -- A list of accounts that are admins for the server.
-admins = { "focus@auth.jitsi.example.com" }
+admins = { "focus@auth.jitsi.example.com" }                     --changeme
 
 pidfile = "/tmp/prosody.pid";
 
@@ -67,24 +67,24 @@ certificates = "../../../../var/db/prosody/"
 
 VirtualHost "localhost"
 
-VirtualHost "jitsi.example.com"
+VirtualHost "jitsi.example.com"                                                 --changeme
         authentication = "anonymous"
         ssl = {
-                key = "/var/db/prosody/jitsi.example.com.key";
-                certificate = "/var/lib/prosody/jitsi.example.com.crt";
+                key = "/var/db/prosody/jitsi.example.com.key";                  --changeme
+                certificate = "/var/lib/prosody/jitsi.example.com.crt";         --changeme
         }
         c2s_require_encryption = false
 
 VirtualHost "auth.jitsi.example.com"
     ssl = {
-        key = "/var/db/prosody/auth.jitsi.example.com.key";
-        certificate = "/var/db/prosody/auth.jitsi.example.com.crt";
+        key = "/var/db/prosody/auth.jitsi.example.com.key";                     --changeme
+        certificate = "/var/db/prosody/auth.jitsi.example.com.crt";             --changeme
     }
     authentication = "internal_plain"
 
 ------ Components ------
-Component "conference.jitsi.example.com" "muc"
-Component "jitsi-videobridge.jitsi.example.com"
-    component_secret = "<YOURSECRET1>"
-Component "focus.jitsi.example.com"
-    component_secret = "<YOURSECRET2>"
+Component "conference.jitsi.example.com" "muc"                                  --changeme
+Component "jitsi-videobridge.jitsi.example.com"                                 --changeme
+    component_secret = "<YOURSECRET1>"                                          --changeme
+Component "focus.jitsi.example.com"                                             --changeme
+    component_secret = "<YOURSECRET2>"                                          --changeme
