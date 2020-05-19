@@ -71,7 +71,7 @@ VirtualHost "<jitsi.example.com>"                                               
         authentication = "anonymous"
         ssl = {
                 key = "/var/db/prosody/<jitsi.example.com>.key";                  --changeme
-                certificate = "/var/lib/prosody/<jitsi.example.com>.crt";         --changeme
+                certificate = "/var/db/prosody/<jitsi.example.com>.crt";          --changeme
         }
         c2s_require_encryption = false
 
