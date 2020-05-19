@@ -2,7 +2,7 @@
 ---------- Server-wide settings ----------
 
 -- A list of accounts that are admins for the server.
-admins = { "focus@auth.jitsi.example.com" }                     --changeme
+admins = { "focus@auth.<jitsi.example.com>" }                     --changeme
 
 pidfile = "/tmp/prosody.pid";
 
@@ -67,24 +67,24 @@ certificates = "../../../../var/db/prosody/"
 
 VirtualHost "localhost"
 
-VirtualHost "jitsi.example.com"                                                 --changeme
+VirtualHost "<jitsi.example.com>"                                                 --changeme
         authentication = "anonymous"
         ssl = {
-                key = "/var/db/prosody/jitsi.example.com.key";                  --changeme
-                certificate = "/var/lib/prosody/jitsi.example.com.crt";         --changeme
+                key = "/var/db/prosody/<jitsi.example.com>.key";                  --changeme
+                certificate = "/var/lib/prosody/<jitsi.example.com>.crt";         --changeme
         }
         c2s_require_encryption = false
 
-VirtualHost "auth.jitsi.example.com"
+VirtualHost "auth.<jitsi.example.com>"                                            --changeme
     ssl = {
-        key = "/var/db/prosody/auth.jitsi.example.com.key";                     --changeme
-        certificate = "/var/db/prosody/auth.jitsi.example.com.crt";             --changeme
+        key = "/var/db/prosody/auth.<jitsi.example.com>.key";                     --changeme
+        certificate = "/var/db/prosody/<auth.jitsi.example.com>.crt";             --changeme
     }
     authentication = "internal_plain"
 
 ------ Components ------
-Component "conference.jitsi.example.com" "muc"                                  --changeme
-Component "jitsi-videobridge.jitsi.example.com"                                 --changeme
-    component_secret = "<YOURSECRET1>"                                          --changeme
-Component "focus.jitsi.example.com"                                             --changeme
-    component_secret = "<YOURSECRET2>"                                          --changeme
+Component "conference.<jitsi.example.com>" "muc"                                  --changeme
+Component "jitsi-videobridge.<jitsi.example.com>"                                 --changeme
+    component_secret = "<YOURSECRET1>"                                            --changeme
+Component "focus.<jitsi.example.com>"                                             --changeme
+    component_secret = "<YOURSECRET2>"                                            --changeme
