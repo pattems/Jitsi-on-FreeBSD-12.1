@@ -12,6 +12,9 @@ Fetch and extract the ports tree, if you haven't already; Jitsi Videobridge, Jit
 portsnap fetch && portsnap extract
 ```
 
+#### Note
+This describes configuring a server `jitsi.example.com`. You will need to change references to that to match your host, and generate some passwords for `YOURSECRET1`, `YOURSECRET2` and `YOURSECRET3`. These placeholders are indicated in this guide and in the example configuration files with `<angled brackets>`
+
 ## Configure prosody
 
 Edit config file `/usr/local/etc/prosody/prosody.cfg.lua` (see example config file [here](prosody.cfg.lua))
