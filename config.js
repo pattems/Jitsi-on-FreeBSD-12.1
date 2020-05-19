@@ -3,16 +3,16 @@
 var config = {
 // Connection
         hosts: {
-                domain: 'jitsi.example.com',
-                muc: 'conference.jitsi.example.com',
-                bridge: 'jitsi-videobridge.jitsi.example.com',
-                focus: 'focus.jitsi.example.com'
-                // anonymousdomain: 'guest.jitsi.example.com',   // When using authentication, domain for guest users.
-                // authdomain: 'auth.jitsi.example.com'          // Domain for authenticated users. Defaults to <domain>.
+                domain: '<jitsi.example.com>',                     //changeme
+                muc: 'conference.<jitsi.example.com>',             //changeme
+                bridge: 'jitsi-videobridge.<jitsi.example.com>',   //changeme
+                focus: 'focus.<jitsi.example.com>'                 //changeme
+                // anonymousdomain: 'guest.jitsi.example.com',     // When using authentication, domain for guest users.
+                // authdomain: 'auth.jitsi.example.com'            // Domain for authenticated users. Defaults to <domain>.
         },
-        bosh: '//jitsi.example.com/http-bind',                   // BOSH URL.
-        clientNode: 'http://jitsi.org/jitsimeet',               // The name of client node advertised in XEP-0115 'c' stanza
-        testing: { p2pTestMode: false },                        // Testing / experimental features.
+        bosh: '//<jitsi.example.com>/http-bind',                   // BOSH URL.
+        clientNode: 'http://jitsi.org/jitsimeet',                  // The name of client node advertised in XEP-0115 'c' stanza
+        testing: { p2pTestMode: false },                           // Testing / experimental features.
 // Audio
         enableNoAudioDetection: true,
         enableNoisyMicDetection: true,
